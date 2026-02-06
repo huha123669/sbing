@@ -315,7 +315,7 @@ attackTab:Textbox("范围", "AttackRange", "10000", function(text)
 	end
 end)
 
-attackTab:Textbox("攻速", "ClickDelay", "0.1", function(text)
+attackTab:Textbox("攻速", "ClickDelay", "0.3", function(text)
 	local num = tonumber(text) or 0.1
 	num = math.round(math.clamp(num, 0.01, 2) * 100) / 100
 	Settings.ClickDelay = num
@@ -867,3 +867,4 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Text = "加载完成 祝您使用愉快",
 	Duration = 5;
 })
+
